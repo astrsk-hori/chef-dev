@@ -19,6 +19,7 @@
     "recipe[rvm::system]",
     "recipe[mysql::server]",
     "recipe[git]",
+    "recipe[zsh]",
     "recipe[vim]"
   ]
 }

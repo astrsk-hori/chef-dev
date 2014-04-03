@@ -10,17 +10,16 @@
     "server_debian_password": "password"
   },
 
-  "nginx":{
-    "port" : 80
-  },
-
   "run_list":[
     "recipe[yum-epel]",
+    "recipe[yum-remi]",
+    "recipe[yum-ius]",
     "recipe[rvm::system]",
     "recipe[mysql::server]",
     "recipe[git]",
     "recipe[zsh]",
     "recipe[vim]",
-    "recipe[nginx]"
+    "recipe[apache2]",
+    "recipe[php54]"
   ]
 }

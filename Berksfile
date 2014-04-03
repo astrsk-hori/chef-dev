@@ -1,8 +1,10 @@
 site :opscode
 cookbook 'mysql'
 cookbook 'git'
-cookbook 'nginx'
 cookbook 'vim'
 cookbook 'zsh'
 cookbook 'rvm', git:'https://github.com/fnichol/chef-rvm.git'
 cookbook 'yum'
+cookbook 'apache2'
+cookbook 'yum-remi', git: 'git://github.com/aiming-cookbooks/yum-remi.git'
+cookbook 'yum-ius', git: 'git@github.com:opscode-cookbooks/yum-ius.git'
